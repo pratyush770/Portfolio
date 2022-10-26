@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} My Portfolio {% endblock title %}
+{% block homeactive %} active {% endblock homeactive %}
+{% block body %}
+
+</nav>
+<div class="text-center alert alert-danger alert-dismissible fade show mb-0" role="alert">
+    <strong>Hello Visitors!</strong> This is my portfolio
+
+</div>
+
+<div class="container-fluid mt-0 px-0">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'pic 1.jpg' %}" height="540" class="d-block w-100">
+            </div>
+        </div>
+    </div>
+</div>
+<h3 class="text-center my-3 py-3"> Me at a glance </h3>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="text-center">
+                <img src="{% static 'pic 2.jpg' %}" class="rounded" height="200">
+                <div class="card-body">
+                    <h5 class="text-center my-3"><b> Fast Learner </b> </h5>
+                    <p class="card-text">I understand the concepts taught to me very well and i like to keep
+                        learning
+                        more and more!!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="text-center">
+                <img src="{%static 'pic 3.jpg' %}" class="rounded" height="200">
+                <div class="card-body">
+                    <h5 class=" text-center my-3"><b> Developer </b> </h5>
+                    <p class="card-text">I am a developer and I like to create amazing websites!!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="text-center">
+                <img src="{% static 'pic 4.jpg' %}" class="rounded" height="200">
+                <div class="card-body">
+                    <h5 class="text-center my-3"><b> Entertainer </b> </h5>
+                    <p class="card-text">I always see to it that the people around me are always in a joyful mood!!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+</div>
+{% endblock body %}
