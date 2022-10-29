@@ -13,9 +13,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background:#6610f2;">
         <div class="container-fluid">
-            <a class="navbar-brand ms-1" href="#">Pratyush</a>
+            <a class="navbar-brand ms-3" href="#">Pratyush</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -36,12 +36,6 @@
                         <a class="nav-link {% block contactactive %} {% endblock contactactive %}" href="/contact">Contact me</a>
                     </li>
                 </ul>
-            </div>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <form class="navbar-nav">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-info text-light" type="submit">Search</button>
-                </form>
             </div>
     </nav>
     {% block body %}
