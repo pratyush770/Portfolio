@@ -1,10 +1,38 @@
 {% extends "base.html" %}
 {% block projectactive %} active {% endblock projectactive %}
 {% block title %} My Projects {% endblock title %}
+{% load static %}
 {% block body %}
     <div class="container my-4">
         <h2 class="text-center">My Projects</h2>
 
     </div>
-
+    <br>
+<div class="container ms-5">
+    <img src="{% static 'pic 19.jpg' %}" height="200" width="200" class="img-left"> 
+    <h3> This project contains an illustration of a ToDO List which I have created using Django framework. </h3>
+    <br>
+    <h3> Link : </h3>
+    <br>
+    <h3> Source code : <a href="https://github.com/pratyush770/ToDo-List.git" target="_blank"> https://github.com/pratyush770/ToDo-List.git </a> </h3>
+</div> 
+<br> <br> <br>
+<div class="container ms-5">
+    <img src="{% static 'pic 20.jpg' %}" height="200" width="200" class="img-left1"> 
+    <h3> This project contains an illustration of a Blog which I have created using Django framework. </h3>
+    <br>
+    <h3> Link : </h3>
+    <br>
+    <h3> Source code : <a href="https://github.com/pratyush770/Blog.git" target="_blank"> https://github.com/pratyush770/Blog.git </a> </h3>
+</div>
+<br> <br> <br>
+<div class="container ms-5">
+    <img src="{% static 'pic 21.jpg' %}" height="200" width="200" class="img-left1"> 
+    <h3> This project contains an illustration of CRUD Operations performed in Django. </h3>
+    <br>
+    <h3> Link : </h3>
+    <br>
+    <h3> Source code : <a href="https://github.com/pratyush770/CRUD-Operations.git" target="_blank"> https://github.com/pratyush770/CRUD-Operations.git </a> </h3>
+</div>
+<br> <br> <br>
 {% endblock body %}
