@@ -11,6 +11,30 @@ html{
         font-size:45%;
     }
 }
+@media (min-width: 992px) {
+    .navbar {
+      width: 28%;
+      height: 100vh;
+    }
+    form input {
+      margin-bottom: 0.7em;
+    }
+  }
+  @media (min-width: 640px) {
+    .navbar {
+        text-align: center;
+    }
+    .navbar-expand {
+        flex-direction: column;
+      }
+    nav ul {
+        flex-direction: column;
+      }
+    
+      nav li {
+        margin: 0.8em 0;
+      }
+    }
 .img-left{
     float:left;
     margin-right:5rem;
