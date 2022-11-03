@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.views.decorators.csrf import requires_csrf_token
 from home.models import Contact
 
 # Create your views here.
@@ -15,6 +16,7 @@ def projects(request):
     #return HttpResponse("This is my projects page (/projects)")
     return render(request,"projects.html")
 
+@requires_csrf_token
 def contact(request):
     context={'success':False}
     if request.method=="POST":
