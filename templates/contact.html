@@ -7,8 +7,8 @@
   <strong>Thank You!!</strong> Your form has been submitted successfully.
 </div>
 {% endif %}
-<div class="container my-4">
-  <h2 class="text-center"> Contact Information</h2> <br> <br>
+<div class="container my-3">
+  <h2 class="text-center"> Contact Information</h2> <br>
   <form action="/contact/" method="post">
     {% csrf_token %}
     <div class="form-group mb-4">
@@ -24,15 +24,14 @@
 
     <div class="form-group mb-4">
       <label for="Desc" class="form-label">Your feedback (50-60 words)</label>
-      <textarea class="form-control" name="feedback" id="feedback" rows="6"> </textarea>
+      <textarea class="form-control" name="feedback" id="feedback" rows="4"> </textarea>
     </div>
-    <br>
     <button style="text-align:center" type="submit" class="btn btn-success btn-md me-3"> Submit </button> <button type="reset"
       class="btn btn-success btn-md"> Reset </button>
   </form>
 </div>
 <div class="text-center container">
-  <p> For any enquiry contact me at pratyushmajumdar27@gmail.com </p>
+  <p style="font-size:20px;"> For any enquiry contact me at pratyushmajumdar27@gmail.com </p>
 
 </div>
 {% endblock body %}
