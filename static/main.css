@@ -28,8 +28,12 @@ h4{
     font-size:22px;
     font-weight:normal;
     color:rgba(0, 0, 0, 0.750);
-
 }
+
+/* Responsiveness */
+
+
+/* for smartphones */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     html,body{
         width:100%;
@@ -66,6 +70,9 @@ h4{
         font-size:38px;
     }
 }
+
+
+/* galaxy fold */
 @media only screen and (min-device-width : 200px) and (max-device-width : 319px){
     html,body{
         width:100%;
@@ -99,6 +106,8 @@ h4{
         margin-right:14px;
     }
 }
+
+/* for ipad devices */
 @media only screen and (min-device-width : 700px) and (max-device-width : 950px){
     html,body{
         width:100%;

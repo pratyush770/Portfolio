@@ -7,4 +7,4 @@ class Contact(models.Model):
     feedback = models.TextField()   #PostgreSQL data style
 
     def __str__(self):
-        return self.name + ' - ' + self.email
+        return self.name + ' - ' + self.email  #displays name and email in admin page
