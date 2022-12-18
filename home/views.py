@@ -5,8 +5,7 @@ from home.models import Contact
 # Create your views here.
 def home(request):
     #return HttpResponse("This is my homepage (/)")
-    context={'name':'Pratyush','course':'Django','sir':'CodewithHarry'}
-    return render(request,"home.html",context)
+    return render(request,"home.html")
 
 def about(request):
     #return HttpResponse("This is my about page (/about)")
